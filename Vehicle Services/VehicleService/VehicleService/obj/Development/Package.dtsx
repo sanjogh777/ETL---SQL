@@ -1,0 +1,1088 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/27/2019 9:42:24 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-BN3MLGA"
+  DTS:CreatorName="DESKTOP-BN3MLGA\sanjo"
+  DTS:DTSID="{AB2085FB-7256-4BAE-B99E-D7E7F570BE0D}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.0900.40"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{ACACF4CD-111E-48EC-815D-3F5D9BF45132}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-BN3MLGA\SQLEXPRESS.DSTraining]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{DECBCD9F-5F16-4C27-A5FA-2378B9AB4F63}"
+      DTS:ObjectName="DESKTOP-BN3MLGA\SQLEXPRESS.DSTraining">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-BN3MLGA\SQLEXPRESS;Initial Catalog=DSTraining;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{43C75701-D71D-4C19-B5B3-7ADA85E004CD}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\sanjo\source\repos\DATA SCIENCE PROJECTS\20190127 Vehicle Service\3. Uploaded Data\VehicleService_Combined.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerID"
+              DTS:DTSID="{8D35AA91-78C9-49A8-999B-58374B53E909}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerSince"
+              DTS:DTSID="{11551BE6-C8E4-4BA5-897A-E035BBA5CE46}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Vehicle"
+              DTS:DTSID="{F59F6C24-6631-4D58-BED6-5F6DEA96514C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2014"
+              DTS:DTSID="{9EAC43FE-9C92-41A8-B8CB-A3F40304E6D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2015"
+              DTS:DTSID="{87FD575C-35E3-41A6-AD29-FDAC7DEDA180}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2016E"
+              DTS:DTSID="{DDAA3E57-3522-4152-A9C7-1C6C3C2FF6AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 6"
+              DTS:DTSID="{3E6DCA9F-B0C8-4DC6-86BF-F3B7257D6015}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{367AF58B-E279-4578-90CA-CFA8E0D8092C}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\sanjo\source\repos\DATA SCIENCE PROJECTS\20190127 Vehicle Service\4. Analysis\Data Errors\Automatically Excluded Results\20190127_VehicleService.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerID"
+              DTS:DTSID="{F09496B7-E4ED-4BC7-9E53-A25225BA963E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerSince"
+              DTS:DTSID="{D9C1EB87-7D86-4431-9E66-C2FC70E16E21}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Vehicle"
+              DTS:DTSID="{6164442E-EC65-44CE-8652-7767A7F66F44}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2014"
+              DTS:DTSID="{6ADE4E5A-F5A8-44BD-AEE6-90C25034977A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2015"
+              DTS:DTSID="{BE0DC6DA-1472-466B-88EE-92FDB5F7077C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2016E"
+              DTS:DTSID="{99E2B5C3-D829-4B8A-8842-25DB9965A253}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 6"
+              DTS:DTSID="{D4418821-775A-4337-9113-305CDEBA0237}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\20190127"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D7DA5E93-B023-4EC3-AA13-BF6130746C0E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="20190127"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\20190127\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\20190127\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\20190127\Conditional Split.Inputs[Conditional Split Input].Columns[2016E]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="2016E"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[2016E]" />
+                    <inputColumn
+                      refId="Package\20190127\Conditional Split.Inputs[Conditional Split Input].Columns[Column 6]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="Column 6"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\20190127\Conditional Split.Outputs[Bad Records]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Bad Records"
+                  synchronousInputId="Package\20190127\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[LEN](#{Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]}) &gt; 0 || [LEN](#{Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[2016E]}) == 0</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">LEN([Column 6]) &gt; 0 || LEN([2016E]) == 0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\20190127\Conditional Split.Outputs[Good Records]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Good Records"
+                  synchronousInputId="Package\20190127\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\20190127\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\20190127\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20190127\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\20190127\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\20190127\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\20190127\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\20190127\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\20190127\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].Columns[CustomerID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="CustomerID"
+                      externalMetadataColumnId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerID]"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerID]" />
+                    <inputColumn
+                      refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].Columns[CustomerSince]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="CustomerSince"
+                      externalMetadataColumnId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerSince]"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerSince]" />
+                    <inputColumn
+                      refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].Columns[Vehicle]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="Vehicle"
+                      externalMetadataColumnId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Vehicle]"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[Vehicle]" />
+                    <inputColumn
+                      refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].Columns[2014]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="2014"
+                      externalMetadataColumnId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[2014]"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[2014]" />
+                    <inputColumn
+                      refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].Columns[2015]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="2015"
+                      externalMetadataColumnId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[2015]"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[2015]" />
+                    <inputColumn
+                      refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].Columns[2016E]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="2016E"
+                      externalMetadataColumnId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[2016E]"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[2016E]" />
+                    <inputColumn
+                      refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column 6]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="Column 6"
+                      externalMetadataColumnId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 6]"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="CustomerID" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerSince]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="CustomerSince" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Vehicle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="Vehicle" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[2014]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="2014" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[2015]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="2015" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[2016E]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="2016E" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 6]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="Column 6" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\20190127\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\20190127\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CustomerID]"
+                      length="5000"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerID]"
+                      name="CustomerID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerSince]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CustomerSince]"
+                      length="5000"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerSince]"
+                      name="CustomerSince"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[Vehicle]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Vehicle]"
+                      length="5000"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[Vehicle]"
+                      name="Vehicle"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[2014]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[2014]"
+                      length="5000"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[2014]"
+                      name="2014"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[2015]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[2015]"
+                      length="5000"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[2015]"
+                      name="2015"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[2016E]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[2016E]"
+                      length="5000"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[2016E]"
+                      name="2016E"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 6]"
+                      length="5000"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]"
+                      name="Column 6"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CustomerID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="CustomerID" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CustomerSince]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="CustomerSince" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Vehicle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="Vehicle" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[2014]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="2014" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[2015]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="2015" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[2016E]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="2016E" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 6]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="Column 6" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\20190127\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\20190127\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\20190127\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[RAW_VehicleService_20190127]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\20190127\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-BN3MLGA\SQLEXPRESS.DSTraining]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-BN3MLGA\SQLEXPRESS.DSTraining]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CustomerID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="CustomerID"
+                      externalMetadataColumnId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerID]" />
+                    <inputColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CustomerSince]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="CustomerSince"
+                      externalMetadataColumnId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomerSince]"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerSince]" />
+                    <inputColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Vehicle]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="Vehicle"
+                      externalMetadataColumnId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle]"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[Vehicle]" />
+                    <inputColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[2014]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="2014"
+                      externalMetadataColumnId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[2014]"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[2014]" />
+                    <inputColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[2015]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="2015"
+                      externalMetadataColumnId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[2015]"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[2015]" />
+                    <inputColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[2016E]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="2016E"
+                      externalMetadataColumnId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[2016E]"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[2016E]" />
+                    <inputColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 6]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="Column 6"
+                      externalMetadataColumnId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Column 6]"
+                      lineageId="Package\20190127\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RowNumber]"
+                      dataType="i4"
+                      name="RowNumber" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="CustomerID" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomerSince]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="CustomerSince" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="Vehicle" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[2014]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="2014" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[2015]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="2015" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[2016E]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="2016E" />
+                    <externalMetadataColumn
+                      refId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Column 6]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="Column 6" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\20190127\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20190127\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\20190127\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\20190127\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\20190127\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\20190127.Paths[Bad Records]"
+              endId="Package\20190127\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Bad Records"
+              startId="Package\20190127\Conditional Split.Outputs[Bad Records]" />
+            <path
+              refId="Package\20190127.Paths[Flat File Source Output]"
+              endId="Package\20190127\Conditional Split.Inputs[Conditional Split Input]"
+              name="Flat File Source Output"
+              startId="Package\20190127\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\20190127.Paths[Good Records]"
+              endId="Package\20190127\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Good Records"
+              startId="Package\20190127\Conditional Split.Outputs[Good Records]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="124.8,41.6"
+          Id="Package\20190127"
+          TopLeft="119.428573462428,47.7176477280455" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\20190127">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\20190127\Flat File Source"
+          TopLeft="98.2857159595101,37.9294122966516" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\20190127\OLE DB Destination"
+          TopLeft="184.653064369113,286.917651082735" />
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\20190127\Conditional Split"
+          TopLeft="152.653063824156,153.815128207619" />
+        <EdgeLayout
+          Id="Package\20190127.Paths[Flat File Source Output]"
+          TopLeft="173.48571595951,79.5294122966516">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="56.3673478646459,74.2857159109677"
+              Start="0,0"
+              End="56.3673478646459,66.7857159109677">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.1428579554838" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.1428579554838"
+                    Point2="0,37.1428579554838"
+                    Point3="4,37.1428579554838" />
+                  <mssgle:LineSegment
+                    End="52.3673478646459,37.1428579554838" />
+                  <mssgle:CubicBezierSegment
+                    Point1="52.3673478646459,37.1428579554838"
+                    Point2="56.3673478646459,37.1428579554838"
+                    Point3="56.3673478646459,41.1428579554838" />
+                  <mssgle:LineSegment
+                    End="56.3673478646459,66.7857159109677" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\20190127\Flat File Destination"
+          TopLeft="403.265312990016,158.184876168063" />
+        <EdgeLayout
+          Id="Package\20190127.Paths[Bad Records]"
+          TopLeft="307.053063824156,176.800002187841">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="96.2122491658604,0"
+              Start="0,0"
+              End="88.7122491658604,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="88.7122491658604,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="16.3685464579302,5,55.97515625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\20190127.Paths[Good Records]"
+          TopLeft="229.853063824156,195.415128207619">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="40.0000005449567,91.5025228751161"
+              Start="0,0"
+              End="40.0000005449567,84.0025228751161">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.751261437558" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.751261437558"
+                    Point2="0,45.751261437558"
+                    Point3="4,45.751261437558" />
+                  <mssgle:LineSegment
+                    End="36.0000005449567,45.751261437558" />
+                  <mssgle:CubicBezierSegment
+                    Point1="36.0000005449567,45.751261437558"
+                    Point2="40.0000005449567,45.751261437558"
+                    Point3="40.0000005449567,49.751261437558" />
+                  <mssgle:LineSegment
+                    End="40.0000005449567,84.0025228751161" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-11.3900973837716,50.751261437558,62.7801953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\20190127\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

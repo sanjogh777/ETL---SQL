@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "VehicleService", "VehicleService\VehicleService.dtproj", "{A1A9DBEC-AC09-41E1-9258-949B0E974075}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1A9DBEC-AC09-41E1-9258-949B0E974075}.Development|Default.ActiveCfg = Development
+		{A1A9DBEC-AC09-41E1-9258-949B0E974075}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40736AE5-769E-4177-B685-D8B61C481DA9}
+	EndGlobalSection
+EndGlobal
